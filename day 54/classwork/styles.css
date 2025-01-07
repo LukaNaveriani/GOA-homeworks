@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%; 
+    border: 2px solid #4caf50;
+    padding: 20px;
+    background-color: #f1f8e9;
+}
+
+.frog {
+    font-size: 50px; 
+}
+
+.lilypad {
+    font-size: 50px;
+    margin-left: 20px; 
+}
