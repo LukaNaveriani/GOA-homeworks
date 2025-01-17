@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Space between sections */
+}
+
+.section {
+    display: flex; /* Use flexbox for the section */
+    justify-content: space-between; /* Space out the boxes evenly */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1; /* Make boxes grow equally */
+    margin: 0 10px; /* Space between boxes */
+    text-align: center;
+}

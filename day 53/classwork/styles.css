@@ -1,0 +1,40 @@
+.parent {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.parent:nth-child(1) {
+    background-color: lightblue;
+    border: 5px solid blue;
+    padding: 10px;
+    margin: 15px;
+}
+
+.parent:nth-child(2) {
+    background-color: lightgreen;
+    border: 5px solid green;
+    padding: 15px;
+    margin: 10px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: absolute;
+}
+
+.parent:nth-child(1) .child {
+    top: 10px;
+    left: 10px;
+}
+
+.parent:nth-child(2) .child {
+    bottom: 10px;
+    right: 10px;
+}

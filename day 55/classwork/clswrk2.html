@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davaleba</title>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+      width: 150px;
+    }
+
+    .box h4 {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .box p {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .box.total-members {
+      border-color: #4CAF50;
+    }
+
+    .box.total-members h4 {
+      color: #4CAF50;
+    }
+
+    .box.total-posts {
+      border-color: #2196F3;
+    }
+
+    .box.total-posts h4 {
+      color: #2196F3;
+    }
+
+    .box.total-comments {
+      border-color: #673AB7;
+    }
+
+    .box.total-comments h4 {
+      color: #673AB7;
+    }
+
+    .box.server-load {
+      border-color: #F44336;
+    }
+
+    .box.server-load h4 {
+      color: #F44336;
+    }

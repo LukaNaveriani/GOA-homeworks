@@ -1,0 +1,110 @@
+<html>
+<head>
+    <style>
+        .parent {
+            width: 500px;
+            height: 500px;
+            background-color: #f0f0f0;
+            position: relative;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;    
+            justify-content: flex-end; 
+            gap: 10px;            
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin-bottom: 10px; 
+        }
+
+        .child:last-child {
+            margin-bottom: 0;
+        }
+        body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+      width: 150px;
+    }
+
+    .box h4 {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .box p {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .box.total-members {
+      border-color: #4CAF50;
+    }
+
+    .box.total-members h4 {
+      color: #4CAF50;
+    }
+
+    .box.total-posts {
+      border-color: #2196F3;
+    }
+
+    .box.total-posts h4 {
+      color: #2196F3;
+    }
+
+    .box.total-comments {
+      border-color: #673AB7;
+    }
+
+    .box.total-comments h4 {
+      color: #673AB7;
+    }
+
+    .box.server-load {
+      border-color: #F44336;
+    }
+
+    .box.server-load h4 {
+      color: #F44336;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
+<!-- justify-content მუშაობს მთავარ ღერძზ -->
+<!-- align-items:მუშაობს განივ ღერძზე -->
+<!-- flex-direction ცვლის მთავარ და განივ ღერძებს -->
+ 

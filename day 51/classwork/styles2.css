@@ -1,0 +1,28 @@
+        /* ვრცელი გზა სტილებისთვის */
+        ul {
+            list-style-type: square;
+            list-style-position: inside;
+            list-style-image: none;
+        }
+
+        /* მოკლე გზა სტილებისთვის */
+        ol {
+            list-style: decimal inside;
+        }
+
+        /* დამატებითი სტილები სიების გასაფორმებლად */
+        ul, ol {
+            background-color: #f0f0f0;
+            padding: 20px 40px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        li:hover {
+            background-color: #e0e0e0;
+        }
