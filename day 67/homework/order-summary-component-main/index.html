@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .order-summary {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 360px;
+            overflow: hidden;
+        }
+
+        .order-summary .image-section {
+            background-color: #6c63ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .order-summary .image-section img {
+            width: 100px;
+            height: auto;
+        }
+
+        .order-summary .content-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .order-summary h1 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .order-summary p {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .order-summary .plan {
+            background: #f9f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .order-summary .plan-info {
+            text-align: left;
+        }
+
+        .order-summary .plan-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .order-summary .plan-price {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .order-summary .change-link {
+            color: #6c63ff;
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .order-summary .cta-button {
+            background: #6c63ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .order-summary .cta-button:hover {
+            background: #5a54d1;
+        }
+
+        .order-summary .cancel-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .order-summary .cancel-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="order-summary">
+    <div class="image-section">
+        <img src="illustration.png" alt="Illustration">
+    </div>
+    <div class="content-section">
+        <h1>Order Summary</h1>
+        <p>You can now enjoy unlimited content anywhere, anytime.</p>
+        <div class="plan">
+            <div class="plan-info">
+                <span class="plan-name">Annual Plan</span>
+                <span class="plan-price">$59.99/year</span>
+            </div>
+            <a href="#" class="change-link">Change</a>
+        </div>
+        <button class="cta-button">Proceed to Payment</button>
+        <a href="#" class="cancel-link">Cancel Order</a>
+    </div>
+</div>
+
+</body>
+</html>
