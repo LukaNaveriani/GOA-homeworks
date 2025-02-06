@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero-image {
+    flex: 1;
+    background: url('https://via.placeholder.com/500x400') no-repeat center center/cover;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.gallery-section {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item div {
+    padding: 15px;
+}
+
+.gallery-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
