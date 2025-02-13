@@ -1,0 +1,18 @@
+@keyframes toggle {
+    0% {
+        transform: scale(1);
+        background-color: blue;
+    }
+    100% {
+        transform: scale(1.5);
+        background-color: red;
+    }
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation: toggle 2s linear infinite alternate;
+}
