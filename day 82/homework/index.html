@@ -1,0 +1,82 @@
+<!-- ჩაშენებული ობიექტები არის სტანდარტული ობიექტები, რომლებიც JavaScript-ში უკვე არსებობს და მრავალფეროვანი ფუნქციონალით არის აღჭურვილი. -->
+<!-- Stack არის მეხსიერების ნაწილი, რომელიც გამოიყენება პრიმიტიული ტიპების (string, number, boolean, null, undefined, symbol, bigint) შესანახად.
+
+მონაცემები ინახება LIFO (Last In, First Out) პრინციპით.
+მონაცემებზე წვდომა ძალიან სწრაფია.
+ავტომატურად მართავს მეხსიერებას (როცა ფუნქცია სრულდება, მისი ცვლადები სტეკიდან იშლება).
+პლიუსები: სწრაფია, ავტომატურად იწმინდება.
+მინუსები: მცირე მეხსიერება, ინახავს მხოლოდ პრიმიტიულ მონაცემებს.
+Heap არის მეხსიერების ფართო ადგილი, სადაც არაპრიმიტიული მონაცემები (ობიექტები, მასივები, ფუნქციები) ინახება.
+
+მონაცემებს არ გააჩნიათ ფიქსირებული ზომა.
+მონაცემებზე წვდომა ხდება მოწოდებული მისამართის (Reference) მეშვეობით.
+პროგრამისტმა თავად უნდა მართოს მეხსიერება (მაგალითად, null მინიჭებით).
+პლიუსები: ინახავს დიდ მონაცემებს, მოქნილია.
+მინუსები: შედარებით  -->
+
+
+```html
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ობიექტები</title>
+</head>
+<body>
+
+
+    <script>
+        let userName = prompt("შეიყვანეთ თქვენი სახელი:");
+        let userSurname = prompt("შეიყვანეთ თქვენი გვარი:");
+        let userAge = prompt("შეიყვანეთ თქვენი ასაკი:");
+
+        let user = {
+            name: userName,
+            surname: userSurname,
+            age: userAge
+        };
+
+        console.log("User Object:", user);
+
+        user.name = "Updated Name";
+        console.log("Updated User Object:", user);
+
+        const me = {
+            name: "Nika",
+            age: 20
+        };
+
+        const you = me;
+        you.age = 25;
+        console.log(me.age);
+
+        console.log("Math.floor:");
+        console.log(Math.floor(4.9));
+        console.log(Math.floor(7.3));
+        console.log(Math.floor(-2.8));
+
+        console.log("Math.ceil:");
+        console.log(Math.ceil(4.1));
+        console.log(Math.ceil(7.9));
+        console.log(Math.ceil(-2.3));
+
+        console.log("Math.round:");
+        console.log(Math.round(4.5));
+        console.log(Math.round(7.2));
+        console.log(Math.round(-2.7));
+
+        console.log("Math.trunc:");
+        console.log(Math.trunc(4.9));
+        console.log(Math.trunc(7.8));
+        console.log(Math.trunc(-2.3));
+
+        console.log("Math.random:");
+        console.log(Math.random());
+        console.log(Math.random() * 10);
+        console.log(Math.floor(Math.random() * 100));
+    </script>
+
+</body>
+</html>
+```

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c5e4e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.calculator {
+    display: flex;
+    gap: 20px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.tip-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tip {
+    padding: 10px;
+    border: none;
+    background: #00494d;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tip:hover {
+    background: #26c0ab;
+}
+
+.output-section {
+    background: #00494d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.result p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#tip-amount, #total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #26c0ab;
+}
+
+#reset {
+    width: 100%;
+    padding: 10px;
+    background: #26c0ab;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#reset:hover {
+    background: #0d686d;
+}

@@ -1,0 +1,65 @@
+<!-- ობიექტი მონაცემებისა და ქცევების ერთობლიობაა, რომელიც კონკრეტულ კლასს ეკუთვნის.  
+კუთვნილება ობიექტის ცვლადია, რომელიც მისი თვისებებს აღწერს.  
+მეთოდი ფუნქცია, რომელიც ობიექტთან არის დაკავშირებული და მასზე მოქმედებს.   -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ობიექტების მართვა</title>
+</head>
+<body>
+
+    <script>
+        let me = {
+            name: "Giorgi",
+            surname: "Kapanadze",
+            age: 25,
+            sayHello: function() {
+                console.log("Hello, World!");
+            }
+        };
+
+        let familyMember = {
+            name: "Nino",
+            surname: "Kapanadze",
+            age: 50,
+            sayHello: function() {
+                console.log("Hello, World!");
+            }
+        };
+
+        console.log("Me:", me);
+        console.log("Family Member:", familyMember);
+
+        console.log("My Name:", me.name);
+        console.log("My Surname:", me.surname);
+        console.log("My Age:", me.age);
+
+        console.log("Family Member Name:", familyMember.name);
+        console.log("Family Member Surname:", familyMember.surname);
+        console.log("Family Member Age:", familyMember.age);
+
+        me.age = 26;
+        familyMember.surname = "Gogoladze";
+
+        console.log("Updated Me:", me);
+        console.log("Updated Family Member:", familyMember);
+        me.city = "Tbilisi";
+        familyMember.city = "Batumi";
+
+        console.log("Me with new attribute:", me);
+        console.log("Family Member with new attribute:", familyMember);
+        delete me.city;
+        delete familyMember.city;
+
+        console.log("Me after deletion:", me);
+        console.log("Family Member after deletion:", familyMember);
+
+        me.sayHello();
+        familyMember.sayHello();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+</head>
+<body>
+    <script>
+        // let და const გამოიყენება ცვლადების გამოსაცხადებლად JavaScript-ში.
+        // let საშუალებას გვაძლევს გამოვუცხადოთ ცვლადი, რომელიც შემდგომში შეგვიძლია შევცვალოთ.
+        // const კი ქმნის ცვლადს, რომლის მნიშვნელობაც აღარ შეგვიძლია შევცვალოთ.
+
+        let age = 25; // შეგვიძლია შემდგომში შევცვალოთ
+        const pi = 3.14; // ამ ცვლადის შეცვა უცვლელია
+
+
+        let num = 5;
+
+        let score = 85; 
+        let grade;
+
+        if (score >= 90 && score <= 100) {
+            grade = "A";
+        } else if (score >= 80 && score < 90) {
+            grade = "B";
+        } else if (score >= 70 && score < 80) {
+            grade = "C";
+        } else if (score >= 60 && score < 70) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        console.log("შეფასება: " + grade);
+
+
+        console.log(5 > 3);  
+        console.log(5 < 3);  
+        console.log(5 >= 5); 
+        console.log(5 <= 4); 
+        console.log(5 === "5"); 
+
+        console.log(10 !== 5);  
+        console.log(10 == "10"); 
+        console.log(10 === "10"); 
+        console.log(7 != 8);  
+        console.log(7 !== 7);
+    </script>
+</body>
+</html>
