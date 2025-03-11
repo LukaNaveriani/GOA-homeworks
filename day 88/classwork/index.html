@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Status</title>
+</head>
+<body>
+
+    <h2>Check Temperature Status</h2>
+    <input type="number" id="temperatureInput" placeholder="Enter temperature">
+    <button onclick="checkTemperature()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function temperatureStatus(temp = 20) {
+            if (temp < -10) {
+                return "Very cold";
+            } else if (temp >= -10 && temp < 0) {
+                return "Cold";
+            } else if (temp >= 0 && temp < 20) {
+                return "Normal";
+            } else if (temp >= 20 && temp < 30) {
+                return "Warm";
+            } else {
+                return "Hot";
+            }
+        }
+
+        function checkTemperature() {
+            let temp = document.getElementById("temperatureInput").value;
+            temp = temp === "" ? 20 : parseFloat(temp);
+            document.getElementById("result").innerText = "Status: " + temperatureStatus(temp);
+        }
+    </script>
+
+</body>
+</html>

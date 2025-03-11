@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+
+    <h2>What is an Event and Event Listener?</h2>
+    <p>In JavaScript, an event is an action that takes place when a user interacts with a page, such as clicking a button, hovering over an element, or typing text. An event listener is a function that listens for specific events and executes code when those events occur.</p>
+    
+    <p><b>Example:</b> When a user clicks a button, an event listener can catch the "click" event and run a function in response.</p>
+
+    <h2>Click the Button to See "Hello World"</h2>
+    <button id="helloButton">Click Me</button>
+
+    <script>
+        document.getElementById("helloButton").addEventListener("click", function() {
+            console.log("Hello World");
+        });
+    </script>
+
+    <h2>Click to Calculate the Sum of Two Numbers</h2>
+    <button id="sumButton">Calculate Sum</button>
+
+    <script>
+        function calculateSum() {
+            let num1 = parseFloat(prompt("Enter the first number:"));
+            let num2 = parseFloat(prompt("Enter the second number:"));
+            let sum = num1 + num2;
+            console.log("The sum is: " + sum);
+        }
+
+        document.getElementById("sumButton").addEventListener("click", calculateSum);
+    </script>
+
+</body>
+</html>

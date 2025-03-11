@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+
+    <h2>Task 2: Calculate Average of 5 Numbers</h2>
+    <button onclick="showAverage()">Calculate Average</button>
+
+    <script>
+        function showAverage() {
+            const result = average(10, 20, 30, 40, 50);
+            alert(result);
+        }
+
+        function average(a, b, c, d, e) {
+            return (a + b + c + d + e) / 5;
+        }
+    </script>
+
+    <hr>
+
+    <h2>Task 3: Calculate Average of 5 Numbers (Arrow Function)</h2>
+    <button onclick="showArrowAverage()">Calculate Average (Arrow)</button>
+
+    <script>
+        const averageArrow = (a, b, c, d, e) => (a + b + c + d + e) / 5;
+
+        function showArrowAverage() {
+            const result = averageArrow(10, 20, 30, 40, 50);
+            alert(result);
+        }
+    </script>
+
+    <hr>
+
+    <h2>Task 4: Display Personal Information</h2>
+    <button onclick="printPersonInfo('James', 'Smith', 25)">Display Information</button>
+
+    <script>
+        function printPersonInfo(firstName, lastName, age) {
+            alert(`My name is ${firstName} ${lastName}, and I am ${age} years old.`);
+        }
+    </script>
+
+    <hr>
+
+    <h2>Task 5: Calculate Total Price</h2>
+    <button onclick="calculateTotal(100, 5)">Calculate Total Price</button>
+
+    <script>
+        const calculateTotal = (price, quantity = 1) => price * quantity;
+
+        function calculateTotal(price, quantity) {
+            const total = calculateTotal(price, quantity);
+            alert(`Total price: ${total}`);
+        }
+    </script>
+
+    <hr>
+
+    <h2>Task 6: Test Let Variable (Scope)</h2>
+    <button onclick="testLet()">Test Let</button>
+
+    <script>
+        function testLet() {
+            let x = 10;
+            alert(x);  
+        }
+    </script>
+
+    <h2>Task 7: Test Var Variable (Scope)</h2>
+    <button onclick="testVar()">Test Var</button>
+
+    <script>
+        function testVar() {
+            var x = 10;
+            alert(x); 
+        }
+        testVar();
+        alert(x); 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <title>classwork</title>
+</head>
+<body>
+    <script>
+    function askUser() {
+        let userName = prompt("შეიყვანეთ თქვენი სახელი:");
+        let userAge = prompt("შეიყვანეთ თქვენი ასაკი:");
+            userAge = parseInt(userAge, 10);
+            
+            let message = userAge >= 18 
+                ? userName + ", შენ შეგიძლია შესვლა შენობაში." 
+                : userName + ", შენ არ შეგიძლია შესვლა შენობაში.";
+            
+            document.getElementById("result").innerText = message;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ლუწი თუ კენტი?</title>
+</head>
+<body>
+
+    <h2>შეიყვანეთ რიცხვი</h2>
+    
+    <label>რიცხვი: <input type="number" id="number"></label>
+    <button onclick="checkEvenOdd()">შემოწმება</button>
+    <p id="result"></p>
+
+    <script>
+        function checkEvenOdd() {
+            let num = document.getElementById("number").value;
+            let message = num % 2 === 0 ? "The number is Even" : "The number is Odd";
+            document.getElementById("result").innerText = message;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მომხმარებლის შემოწმება</title>
+</head>
+<body>
+
+    <h2>შეიყვანეთ თქვენი მონაცემები</h2>
+
+    <label>ასაკი: <input type="number" id="age"></label>
+    <button onclick="checkAge()">შემოწმება</button>
+    <p id="ageResult"></p>
+
+    <br>
+
+    <label>სახელი: <input type="text" id="username"></label><br>
+    <label>პაროლი: <input type="password" id="password"></label>
+    <button onclick="checkPassword()">შესვლა</button>
+    <p id="passwordResult"></p>
+
+    <br>
+    <label>ამინდი: <input type="text" id="weather" placeholder="მაგ: sunny, rainy"></label>
+    <button onclick="checkWeather()">შემოწმება</button>
+    <p id="weatherResult"></p>
+
+    <script>
+        function checkAge() {
+            let age = document.getElementById("age").value;
+            let isAdult = age > 18 ? true : false;
+            document.getElementById("ageResult").innerText = "Adult: " + isAdult;
+        }
+        function checkPassword() {
+            let user = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            let result = password.length < 4 ? "Password is too short" : `Welcome ${user}`;
+            document.getElementById("passwordResult").innerText = result;
+        }
+        function checkWeather() {
+            let weather = document.getElementById("weather").value.toLowerCase();
+            
+            let message = 
+                weather === "sunny" ? "ვივარჯიშებ" :
+                weather === "rainy" ? "წიგნს წავიკითხავ" :
+                weather === "snowy" ? "ფილმს ვუყურებ" :
+                weather === "windy" ? "გარეთ გავისეირნებ" :
+                "დავრჩები სახლში";
+
+            document.getElementById("weatherResult").innerText = message;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function with Variables</title>
+</head>
+<body>
+
+    <script>
+        function parentFunction() {
+            let parentVar = "This is the parent variable"; 
+            
+            function childFunction() {
+                let childVar = "This is the child variable"; 
+                console.log(parentVar); 
+                console.log(childVar);
+            }
+            
+            childFunction(); 
+            console.log(parentVar); 
+        }
+
+        parentFunction(); 
+    </script>
+
+</body>
+</html>

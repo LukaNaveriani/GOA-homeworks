@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>დავალება</title>
+</head>
+<body>
+    <script>
+        let budget = prompt("შეიყვანეთ თანხა:");
+        budget = Number(budget);
+
+        if (budget >= 500) {
+            console.log("გაქვთ საკმარისი თანხა.");
+        } else {
+            document.body.innerHTML = "<h1>თქვენ არ გაქვთ საკმარისი თანხა!</h1>";
+        }
+    </script>
+</body>
+</html>
